@@ -1,0 +1,530 @@
+[
+    {
+        "Código":"HARCON1",
+        "Clasificación":"Impresora",
+        "Tipo":"Hardware",
+        "Problema":"Atasco de papel en la bandeja de entrada",
+        "Causa":"Rodillos de alimentación desgastados o sucios, o papel de gramaje incorrecto.",
+        "Solución":"Desmontar la bandeja de entrada, limpiar los rodillos con alcohol isopropílico y verificar que el papel cumpla con las especificaciones del fabricante."
+    },
+    {
+        "Código":"SOFNET2",
+        "Clasificación":"Red",
+        "Tipo":"Software",
+        "Problema":"No hay conexión a Internet en un equipo específico",
+        "Causa":"Configuración incorrecta de IP estática o conflicto de direcciones MAC.",
+        "Solución":"Verificar la configuración de red, liberar y renovar la IP con `ipconfig \/release` e `ipconfig \/renew`, y revisar la tabla ARP del router."
+    },
+    {
+        "Código":"HARDIS3",
+        "Clasificación":"Disco",
+        "Tipo":"Hardware",
+        "Problema":"Disco duro no detectado en BIOS",
+        "Causa":"Cable SATA\/PCIe dañado o controlador de almacenamiento deshabilitado en BIOS.",
+        "Solución":"Reemplazar el cable SATA\/PCIe, habilitar el controlador de almacenamiento en BIOS y actualizar firmware del disco."
+    },
+    {
+        "Código":"SOFSOF4",
+        "Clasificación":"Sistema",
+        "Tipo":"Software",
+        "Problema":"Windows no inicia después de una actualización",
+        "Causa":"Archivos de sistema corruptos o conflicto con controladores antiguos.",
+        "Solución":"Iniciar en modo seguro, desinstalar la actualización problemática y ejecutar `sfc \/scannow` y `DISM \/RestoreHealth`."
+    },
+    {
+        "Código":"HARMON5",
+        "Clasificación":"Monitor",
+        "Tipo":"Hardware",
+        "Problema":"Pantalla con parpadeo constante",
+        "Causa":"Frecuencia de refresco incorrecta o cable HDMI\/VGA dañado.",
+        "Solución":"Ajustar la frecuencia de refresco en la configuración de pantalla y probar con un cable nuevo."
+    },
+    {
+        "Código":"SOFVIR6",
+        "Clasificación":"Virus",
+        "Tipo":"Software",
+        "Problema":"Ransomware ha encriptado archivos críticos",
+        "Causa":"Infección a través de un archivo adjunto malicioso o explotación de vulnerabilidades.",
+        "Solución":"Aislar el equipo de la red, usar herramientas de descifrado específicas y restaurar desde una copia de seguridad limpia."
+    },
+    {
+        "Código":"HARTEC7",
+        "Clasificación":"Teclado",
+        "Tipo":"Hardware",
+        "Problema":"Teclas específicas no funcionan",
+        "Causa":"Desgaste interno o daño por derrame de líquidos.",
+        "Solución":"Desmontar el teclado, limpiar los contactos con alcohol isopropílico y reemplazar las membranas dañadas."
+    },
+    {
+        "Código":"SOFEMA8",
+        "Clasificación":"Email",
+        "Tipo":"Software",
+        "Problema":"Correos no se envían desde Outlook",
+        "Causa":"Configuración incorrecta del servidor SMTP o bloqueo por el proveedor de correo.",
+        "Solución":"Verificar la configuración SMTP, deshabilitar SSL\/TLS temporalmente y contactar al proveedor para desbloquear la cuenta."
+    },
+    {
+        "Código":"HARMOU9",
+        "Clasificación":"Mouse",
+        "Tipo":"Hardware",
+        "Problema":"Cursor se mueve de forma errática",
+        "Causa":"Sensor láser sucio o superficie no adecuada.",
+        "Solución":"Limpiar el sensor con un paño suave y probar en una superficie plana y opaca."
+    },
+    {
+        "Código":"SOFBAK10",
+        "Clasificación":"Backup",
+        "Tipo":"Software",
+        "Problema":"Copia de seguridad fallida en Windows Server",
+        "Causa":"Volumen de destino con formato incorrecto o permisos insuficientes.",
+        "Solución":"Formatear el volumen en NTFS, verificar permisos de escritura y ejecutar el backup con credenciales de administrador."
+    },
+    {
+        "Código":"HARCPU11",
+        "Clasificación":"CPU",
+        "Tipo":"Hardware",
+        "Problema":"Equipo se apaga bajo carga pesada",
+        "Causa":"Sobrecalentamiento por pasta térmica seca o ventilador defectuoso.",
+        "Solución":"Aplicar nueva pasta térmica, reemplazar el ventilador y monitorear temperaturas con herramientas como HWMonitor."
+    },
+    {
+        "Código":"SOFDRV12",
+        "Clasificación":"Driver",
+        "Tipo":"Software",
+        "Problema":"Dispositivo USB no reconocido",
+        "Causa":"Driver corrupto o conflicto con controladores existentes.",
+        "Solución":"Desinstalar drivers USB desde el Administrador de dispositivos, reiniciar y permitir que Windows reinstale los controladores."
+    },
+    {
+        "Código":"HARUSB13",
+        "Clasificación":"USB",
+        "Tipo":"Hardware",
+        "Problema":"Puerto USB no proporciona energía",
+        "Causa":"Fusible dañado en la placa base o cortocircuito en el puerto.",
+        "Solución":"Reemplazar el fusible o desconectar el puerto USB dañado de la placa base."
+    },
+    {
+        "Código":"SOFVIR14",
+        "Clasificación":"Virus",
+        "Tipo":"Software",
+        "Problema":"Redirección a páginas maliciosas",
+        "Causa":"Infección de adware o secuestro del navegador.",
+        "Solución":"Ejecutar herramientas como AdwCleaner y Malwarebytes, y restablecer la configuración del navegador."
+    },
+    {
+        "Código":"HARLAN15",
+        "Clasificación":"LAN",
+        "Tipo":"Hardware",
+        "Problema":"Conexión de red intermitente",
+        "Causa":"Cable Ethernet dañado o puerto de red defectuoso.",
+        "Solución":"Reemplazar el cable Ethernet y probar con otro puerto en el switch o router."
+    },
+    {
+        "Código":"SOFAPP16",
+        "Clasificación":"Aplicación",
+        "Tipo":"Software",
+        "Problema":"Aplicación se cierra inesperadamente",
+        "Causa":"Conflicto de memoria o bibliotecas DLL corruptas.",
+        "Solución":"Reinstalar la aplicación, actualizar a la última versión y ejecutar un análisis de memoria con Windows Memory Diagnostic."
+    },
+    {
+        "Código":"HARFAN17",
+        "Clasificación":"Ventilador",
+        "Tipo":"Hardware",
+        "Problema":"Ventilador de la CPU hace ruido excesivo",
+        "Causa":"Cojinete del ventilador desgastado o acumulación de polvo.",
+        "Solución":"Limpiar el ventilador, lubricar el cojinete o reemplazar el ventilador."
+    },
+    {
+        "Código":"SOFNET18",
+        "Clasificación":"Red",
+        "Tipo":"Software",
+        "Problema":"No se puede acceder a recursos compartidos en la red",
+        "Causa":"Configuración incorrecta de permisos o firewall bloqueando el acceso.",
+        "Solución":"Verificar permisos de compartir, deshabilitar temporalmente el firewall y probar la conexión."
+    },
+    {
+        "Código":"HARGPU19",
+        "Clasificación":"GPU",
+        "Tipo":"Hardware",
+        "Problema":"Artefactos gráficos en pantalla",
+        "Causa":"Sobrecalentamiento de la GPU o memoria gráfica defectuosa.",
+        "Solución":"Limpiar el disipador de la GPU, reemplazar la pasta térmica y probar en otro equipo."
+    },
+    {
+        "Código":"SOFSOF20",
+        "Clasificación":"Sistema",
+        "Tipo":"Software",
+        "Problema":"Pantalla azul (BSOD) al iniciar",
+        "Causa":"Controlador de dispositivo corrupto o conflicto de hardware.",
+        "Solución":"Iniciar en modo seguro, desinstalar controladores recientes y ejecutar `chkdsk \/f`."
+    },
+    {
+        "Código":"HARPSU21",
+        "Clasificación":"Fuente",
+        "Tipo":"Hardware",
+        "Problema":"Equipo no enciende después de una tormenta eléctrica",
+        "Causa":"Daño en la fuente de poder por pico de voltaje.",
+        "Solución":"Reemplazar la fuente de poder y conectar el equipo a un regulador de voltaje."
+    },
+    {
+        "Código":"SOFVIR22",
+        "Clasificación":"Virus",
+        "Tipo":"Software",
+        "Problema":"Archivos ejecutables desaparecen",
+        "Causa":"Infección de malware que elimina archivos .exe.",
+        "Solución":"Ejecutar un escaneo profundo con herramientas como Kaspersky Rescue Disk y restaurar archivos desde backup."
+    },
+    {
+        "Código":"HARHDD23",
+        "Clasificación":"Disco",
+        "Tipo":"Hardware",
+        "Problema":"Disco duro hace ruidos de clic",
+        "Causa":"Fallo mecánico en el cabezal de lectura\/escritura.",
+        "Solución":"Apagar el equipo inmediatamente y enviar el disco a un servicio de recuperación de datos."
+    },
+    {
+        "Código":"SOFNET24",
+        "Clasificación":"Red",
+        "Tipo":"Software",
+        "Problema":"No se puede conectar a la VPN corporativa",
+        "Causa":"Configuración incorrecta del cliente VPN o bloqueo por el firewall.",
+        "Solución":"Verificar la configuración del cliente VPN, deshabilitar temporalmente el firewall y probar la conexión."
+    },
+    {
+        "Código":"HARMOB25",
+        "Clasificación":"Móvil",
+        "Tipo":"Hardware",
+        "Problema":"Batería se hincha",
+        "Causa":"Sobrecarga o fallo en la celda de la batería.",
+        "Solución":"Reemplazar la batería inmediatamente y evitar cargarla al 100%."
+    },
+    {
+        "Código":"SOFSOF26",
+        "Clasificación":"Sistema",
+        "Tipo":"Software",
+        "Problema":"Windows Update no funciona",
+        "Causa":"Servicios de Windows Update corruptos o bloqueados.",
+        "Solución":"Reiniciar los servicios de Windows Update, ejecutar `wuauclt \/detectnow` y `sfc \/scannow`."
+    },
+    {
+        "Código":"HARPRN27",
+        "Clasificación":"Impresora",
+        "Tipo":"Hardware",
+        "Problema":"Impresora imprime páginas en blanco",
+        "Causa":"Cartucho de tinta vacío o cabezal de impresión obstruido.",
+        "Solución":"Reemplazar el cartucho de tinta y ejecutar la utilidad de limpieza de cabezales."
+    },
+    {
+        "Código":"SOFVIR28",
+        "Clasificación":"Virus",
+        "Tipo":"Software",
+        "Problema":"El navegador redirige a páginas no deseadas",
+        "Causa":"Extensión maliciosa instalada en el navegador.",
+        "Solución":"Eliminar extensiones sospechosas y restablecer la configuración del navegador."
+    },
+    {
+        "Código":"HARCPU29",
+        "Clasificación":"CPU",
+        "Tipo":"Hardware",
+        "Problema":"Equipo se congela al ejecutar aplicaciones pesadas",
+        "Causa":"Sobrecalentamiento o fallo en la memoria RAM.",
+        "Solución":"Limpiar el disipador de la CPU, verificar la RAM con MemTest86 y reemplazar si es necesario."
+    },
+    {
+        "Código":"SOFEMA30",
+        "Clasificación":"Email",
+        "Tipo":"Software",
+        "Problema":"Correos no se reciben en Outlook",
+        "Causa":"Configuración incorrecta del servidor IMAP\/POP3.",
+        "Solución":"Verificar la configuración del servidor, habilitar SSL\/TLS y probar con otra cuenta de correo."
+    },
+    {
+        "Código":"HARLAN31",
+        "Clasificación":"LAN",
+        "Tipo":"Hardware",
+        "Problema":"Conexión de red limitada a 100 Mbps",
+        "Causa":"Cable Ethernet Cat5 en lugar de Cat5e\/Cat6 o puerto de red configurado incorrectamente.",
+        "Solución":"Reemplazar el cable por uno Cat5e\/Cat6 y verificar la configuración del puerto en el switch."
+    },
+    {
+        "Código":"SOFAPP32",
+        "Clasificación":"Aplicación",
+        "Tipo":"Software",
+        "Problema":"Aplicación no responde al iniciar",
+        "Causa":"Conflicto con otros programas o falta de recursos del sistema.",
+        "Solución":"Cerrar programas en segundo plano, aumentar la memoria virtual y reinstalar la aplicación."
+    },
+    {
+        "Código":"HARFAN33",
+        "Clasificación":"Ventilador",
+        "Tipo":"Hardware",
+        "Problema":"Ventilador de la GPU no gira",
+        "Causa":"Fallo en el controlador del ventilador o conexión suelta.",
+        "Solución":"Verificar la conexión del ventilador y reemplazar si es necesario."
+    },
+    {
+        "Código":"SOFNET34",
+        "Clasificación":"Red",
+        "Tipo":"Software",
+        "Problema":"No hay conexión WiFi en un equipo específico",
+        "Causa":"Driver de la tarjeta WiFi corrupto o incompatibilidad con el router.",
+        "Solución":"Reinstalar el driver de la tarjeta WiFi y actualizar el firmware del router."
+    },
+    {
+        "Código":"HARGPU35",
+        "Clasificación":"GPU",
+        "Tipo":"Hardware",
+        "Problema":"Pantalla con líneas verticales",
+        "Causa":"Fallo en la memoria gráfica o conexión de la tarjeta gráfica suelta.",
+        "Solución":"Reinstalar la tarjeta gráfica y probar en otro equipo."
+    },
+    {
+        "Código":"SOFSOF36",
+        "Clasificación":"Sistema",
+        "Tipo":"Software",
+        "Problema":"Error de DLL al ejecutar una aplicación",
+        "Causa":"Archivo DLL faltante o corrupto.",
+        "Solución":"Reinstalar la aplicación o restaurar el archivo DLL desde una copia de seguridad."
+    },
+    {
+        "Código":"HARPSU37",
+        "Clasificación":"Fuente",
+        "Tipo":"Hardware",
+        "Problema":"Equipo se reinicia aleatoriamente",
+        "Causa":"Fuente de poder inestable o sobrecalentamiento.",
+        "Solución":"Reemplazar la fuente de poder y verificar la temperatura del equipo."
+    },
+    {
+        "Código":"SOFVIR38",
+        "Clasificación":"Virus",
+        "Tipo":"Software",
+        "Problema":"El equipo muestra anuncios emergentes constantemente",
+        "Causa":"Infección de adware o secuestro del navegador.",
+        "Solución":"Ejecutar herramientas como AdwCleaner y restablecer la configuración del navegador."
+    },
+    {
+        "Código":"HARHDD39",
+        "Clasificación":"Disco",
+        "Tipo":"Hardware",
+        "Problema":"Disco duro no aparece en el Explorador de Windows",
+        "Causa":"Partición no asignada o disco no inicializado.",
+        "Solución":"Inicializar el disco y crear una partición desde Administración de discos."
+    },
+    {
+        "Código":"SOFNET40",
+        "Clasificación":"Red",
+        "Tipo":"Software",
+        "Problema":"No se puede acceder a un sitio web específico",
+        "Causa":"Bloqueo por el firewall o problema de DNS.",
+        "Solución":"Verificar reglas del firewall, cambiar a DNS público (8.8.8.8) y limpiar la caché DNS con `ipconfig \/flushdns`."
+    },
+    {
+        "Código":"HARMOB41",
+        "Clasificación":"Móvil",
+        "Tipo":"Hardware",
+        "Problema":"Pantalla táctil no responde",
+        "Causa":"Daño en el digitalizador o conexión suelta.",
+        "Solución":"Reemplazar el digitalizador o verificar la conexión interna."
+    },
+    {
+        "Código":"SOFSOF42",
+        "Clasificación":"Sistema",
+        "Tipo":"Software",
+        "Problema":"Error de registro al iniciar Windows",
+        "Causa":"Entradas corruptas en el registro de Windows.",
+        "Solución":"Restaurar el registro desde una copia de seguridad o ejecutar `sfc \/scannow`."
+    },
+    {
+        "Código":"HARPRN43",
+        "Clasificación":"Impresora",
+        "Tipo":"Hardware",
+        "Problema":"Impresora no responde",
+        "Causa":"Problema de comunicación con el equipo o firmware corrupto.",
+        "Solución":"Reiniciar la impresora, actualizar el firmware y reinstalar los drivers."
+    },
+    {
+        "Código":"SOFVIR44",
+        "Clasificación":"Virus",
+        "Tipo":"Software",
+        "Problema":"El equipo muestra un mensaje de rescate",
+        "Causa":"Infección de ransomware.",
+        "Solución":"Aislar el equipo de la red, usar herramientas de descifrado y restaurar desde una copia de seguridad."
+    },
+    {
+        "Código":"HARCPU45",
+        "Clasificación":"CPU",
+        "Tipo":"Hardware",
+        "Problema":"Equipo no arranca después de actualizar la BIOS",
+        "Causa":"Fallo en la actualización de la BIOS.",
+        "Solución":"Restaurar la BIOS desde una copia de seguridad o usar la función de recuperación de la placa base."
+    },
+    {
+        "Código":"SOFEMA46",
+        "Clasificación":"Email",
+        "Tipo":"Software",
+        "Problema":"Correos no se sincronizan en el móvil",
+        "Causa":"Configuración incorrecta de la cuenta o problema con el servidor.",
+        "Solución":"Verificar la configuración de la cuenta, eliminar y volver a agregar la cuenta en el móvil."
+    },
+    {
+        "Código":"HARLAN47",
+        "Clasificación":"LAN",
+        "Tipo":"Hardware",
+        "Problema":"Conexión de red lenta en un equipo específico",
+        "Causa":"Cable Ethernet dañado o puerto de red defectuoso.",
+        "Solución":"Reemplazar el cable Ethernet y probar con otro puerto en el switch."
+    },
+    {
+        "Código":"SOFAPP48",
+        "Clasificación":"Aplicación",
+        "Tipo":"Software",
+        "Problema":"Aplicación no se actualiza",
+        "Causa":"Permisos insuficientes o conflicto con antivirus.",
+        "Solución":"Ejecutar la aplicación como administrador y deshabilitar temporalmente el antivirus."
+    },
+    {
+        "Código":"HARFAN49",
+        "Clasificación":"Ventilador",
+        "Tipo":"Hardware",
+        "Problema":"Ventilador de la fuente de poder hace ruido",
+        "Causa":"Cojinete del ventilador desgastado.",
+        "Solución":"Reemplazar el ventilador o la fuente de poder completa."
+    },
+    {
+        "Código":"SOFNET50",
+        "Clasificación":"Red",
+        "Tipo":"Software",
+        "Problema":"No hay conexión a Internet después de una actualización de Windows",
+        "Causa":"Controlador de red incompatible o configuración incorrecta.",
+        "Solución":"Desinstalar la actualización de Windows, reinstalar el controlador de red y verificar la configuración."
+    },
+    {
+        "Código":"HARGPU51",
+        "Clasificación":"GPU",
+        "Tipo":"Hardware",
+        "Problema":"Pantalla con artefactos gráficos en juegos",
+        "Causa":"Sobrecalentamiento de la GPU o driver corrupto.",
+        "Solución":"Limpiar el disipador de la GPU, reinstalar el driver y monitorear temperaturas."
+    },
+    {
+        "Código":"SOFSOF52",
+        "Clasificación":"Sistema",
+        "Tipo":"Software",
+        "Problema":"Error de arranque después de instalar un programa",
+        "Causa":"Conflicto con servicios esenciales de Windows.",
+        "Solución":"Iniciar en modo seguro, desinstalar el programa y ejecutar `sfc \/scannow`."
+    },
+    {
+        "Código":"HARPSU53",
+        "Clasificación":"Fuente",
+        "Tipo":"Hardware",
+        "Problema":"Equipo no enciende después de un corte de energía",
+        "Causa":"Daño en la fuente de poder por el corte.",
+        "Solución":"Reemplazar la fuente de poder y conectar el equipo a un UPS."
+    },
+    {
+        "Código":"SOFVIR54",
+        "Clasificación":"Virus",
+        "Tipo":"Software",
+        "Problema":"El equipo muestra un mensaje de bloqueo",
+        "Causa":"Infección de ransomware.",
+        "Solución":"Aislar el equipo de la red, usar herramientas de descifrado y restaurar desde una copia de seguridad."
+    },
+    {
+        "Código":"HARHDD55",
+        "Clasificación":"Disco",
+        "Tipo":"Hardware",
+        "Problema":"Disco duro no aparece en el BIOS",
+        "Causa":"Cable SATA\/PCIe dañado o controlador de almacenamiento deshabilitado.",
+        "Solución":"Reemplazar el cable SATA\/PCIe, habilitar el controlador en BIOS y actualizar firmware."
+    },
+    {
+        "Código":"SOFNET56",
+        "Clasificación":"Red",
+        "Tipo":"Software",
+        "Problema":"No hay conexión a Internet en ningún equipo",
+        "Causa":"Fallo en el router o problema con el proveedor de servicios.",
+        "Solución":"Reiniciar el router, verificar la conexión física y contactar al proveedor de Internet."
+    },
+    {
+        "Código":"HARMOB57",
+        "Clasificación":"Móvil",
+        "Tipo":"Hardware",
+        "Problema":"Batería no carga completamente",
+        "Causa":"Cargador defectuoso o puerto de carga dañado.",
+        "Solución":"Reemplazar el cargador y verificar el puerto de carga."
+    },
+    {
+        "Código":"SOFSOF58",
+        "Clasificación":"Sistema",
+        "Tipo":"Software",
+        "Problema":"Error de actualización de Windows",
+        "Causa":"Archivos de sistema corruptos o falta de espacio en disco.",
+        "Solución":"Liberar espacio en disco, ejecutar `DISM \/RestoreHealth` y reinstalar la actualización."
+    },
+    {
+        "Código":"HARPRN59",
+        "Clasificación":"Impresora",
+        "Tipo":"Hardware",
+        "Problema":"Impresión de baja calidad",
+        "Causa":"Cartucho de tinta vacío o cabezal de impresión obstruido.",
+        "Solución":"Reemplazar el cartucho de tinta y ejecutar la utilidad de limpieza de cabezales."
+    },
+    {
+        "Código":"SOFVIR60",
+        "Clasificación":"Virus",
+        "Tipo":"Software",
+        "Problema":"El navegador muestra anuncios no deseados",
+        "Causa":"Extensión maliciosa instalada en el navegador.",
+        "Solución":"Eliminar extensiones sospechosas y restablecer la configuración del navegador."
+    },
+    {
+        "Código":"SOFEMA62",
+        "Clasificación":"Email",
+        "Tipo":"Software",
+        "Problema":"Correos no se envían desde el móvil",
+        "Causa":"Configuración incorrecta del servidor SMTP.",
+        "Solución":"Verificar la configuración SMTP, habilitar SSL\/TLS y probar con otra cuenta de correo."
+    },
+    {
+        "Código":"HARLAN63",
+        "Clasificación":"LAN",
+        "Tipo":"Hardware",
+        "Problema":"Conexión de red intermitente en varios equipos",
+        "Causa":"Fallo en el switch o router.",
+        "Solución":"Reiniciar el switch o router y verificar la configuración de red."
+    },
+    {
+        "Código":"SOFAPP64",
+        "Clasificación":"Aplicación",
+        "Tipo":"Software",
+        "Problema":"Aplicación no responde al guardar archivos",
+        "Causa":"Permisos insuficientes o falta de espacio en disco.",
+        "Solución":"Ejecutar la aplicación como administrador y liberar espacio en disco."
+    },
+    {
+        "Código":"HARFAN65",
+        "Clasificación":"Ventilador",
+        "Tipo":"Hardware",
+        "Problema":"Ventilador de la CPU no gira",
+        "Causa":"Conexión suelta o fallo en el controlador del ventilador.",
+        "Solución":"Verificar la conexión del ventilador y reemplazar si es necesario."
+    },
+    {
+        "Código":"SOFNET66",
+        "Clasificación":"Red",
+        "Tipo":"Software",
+        "Problema":"No hay conexión WiFi en ningún equipo",
+        "Causa":"Fallo en el router o configuración incorrecta.",
+        "Solución":"Reiniciar el router, verificar la configuración y actualizar el firmware."
+    },
+    {
+        "Código":"HARGPU67",
+        "Clasificación":"GPU",
+        "Tipo":"Hardware",
+        "Problema":"Pantalla con líneas horizontales",
+        "Causa":"Fallo en la memoria gráfica o conexión de la tarjeta gráfica suelta.",
+        "Solución":"Reinstalar la tarjeta gráfica y probar en otro equipo."
+    }
+]
