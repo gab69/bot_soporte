@@ -19,8 +19,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keyboard = [
         [InlineKeyboardButton("Ver comandos", callback_data='ver_comandos')],
         [InlineKeyboardButton("Descargar comandos", callback_data='descargar_comandos')],
-        [InlineKeyboardButton("Detener bot", callback_data='detener_bot')],  # Opción para detener el bot
-        [InlineKeyboardButton("⬅️ Volver", callback_data='volver_inicio')]  # Botón para volver al inicio
+        [InlineKeyboardButton("Detener bot", callback_data='detener_bot')], 
+        [InlineKeyboardButton("⬅️ Volver", callback_data='volver_inicio')]  
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
@@ -124,11 +124,11 @@ async def detener_bot(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 
     bot_activo = False
     await query.edit_message_text(text="El bot se ha detenido. ¡Hasta luego!")
-    await context.application.stop()  # Detener el bot de manera segura
+    await context.application.stop()
 
-# Función principal para ejecutar el bot
+# Función principal
 async def main() -> None:
-    # Reemplaza 'TU_TOKEN' con el token que obtuviste de BotFather
+
     application = Application.builder().token("7619665982:AAGC8hzOlcpAQcPwUB0zLk5CLPnZGHqX2dk").build()
 
     # Manejadores de comandos y callbacks
