@@ -129,7 +129,7 @@ async def detener_bot(update: Update, context: ContextTypes.DEFAULT_TYPE) -> Non
 # Función principal
 async def main() -> None:
 
-    application = Application.builder().token("7619665982:AAGC8hzOlcpAQcPwUB0zLk5CLPnZGHqX2dk").build()
+    application = Application.builder().token("PON AQUI TU API DEL BOT DE TELEGRAM").build()
 
     # Manejadores de comandos y callbacks
     application.add_handler(CommandHandler("start", start))  # Maneja el comando /cmds
